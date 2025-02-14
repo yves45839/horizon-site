@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.real-header {
+    background: linear-gradient(270deg, #1a4d2e, #4caf50);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.logo img {
+    height: 2em; /* Ajustez la taille du logo */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2em; /* Ajustez l'�cart entre les �l�ments */
+    margin: 0;
+    padding: 0;
+}
+
+    .nav-list li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .nav-list li a:hover {
+            color: #ff6e7f; /* Couleur de survol */
+        }

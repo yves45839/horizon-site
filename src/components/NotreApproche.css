@@ -1,0 +1,80 @@
+.approach-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.approach-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.approach-step {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 40px;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.approach-step::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 2px;
+    height: 40px; /* Adjust this for the size of the arrow */
+    background-color: #ff6e7f;
+    transform: translateX(-50%);
+}
+
+.arrow-line {
+    width: 20px;
+    height: 20px;
+    border: solid #ff6e7f;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) rotate(45deg);
+    margin-top: -10px;
+    animation: drawArrow 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes drawArrow {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) rotate(45deg) scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) rotate(45deg) scale(1);
+    }
+}
+
+.approach-step:nth-child(odd) .arrow-line {
+    transform: translateX(-50%) rotate(-45deg); /* Flips the arrow for an alternate direction */
+}

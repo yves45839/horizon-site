@@ -1,0 +1,56 @@
+.solutions-section {
+    background: #e0f7e9; /* Vert clair pour rappeler l'écologie */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.solutions-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1a4d2e; /* Vert foncé */
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.solution-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(26, 77, 46, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+}
+
+.solution-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(26, 77, 46, 0.4);
+}
+
+.solution-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 5px solid #1a4d2e;
+}
+
+.solution-content {
+    padding: 20px;
+}
+
+.solution-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1a4d2e; /* Changement de couleur en vert foncé */
+}
+
+.solution-description {
+    font-size: 16px;
+    color: #333;
+}

@@ -1,0 +1,129 @@
+.solutions-section {
+    background: #e0f7e9; /* Vert clair pour rappeler l'écologie */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.solutions-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1a4d2e; /* Vert foncé */
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.solution-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(26, 77, 46, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+}
+
+.solution-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(26, 77, 46, 0.4);
+}
+
+.solution-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 5px solid #1a4d2e;
+}
+
+.solution-content {
+    padding: 20px;
+}
+
+.solution-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1a4d2e; /* Changement de couleur en vert foncé */
+}
+
+.solution-description {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Mise à jour des couleurs pour la section Pourquoi Nous */
+.pourquoi-nous-section {
+    background-color: #e0f7e9; /* Vert clair pour cohérence */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1a4d2e;
+}
+
+.points-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.point-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(26, 77, 46, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.point-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(26, 77, 46, 0.4);
+}
+
+.icon {
+    font-size: 40px;
+    color: #1a4d2e;
+    margin-bottom: 20px;
+}
+
+.point-title {
+    font-size: 24px;
+    color: #1a4d2e;
+    margin-bottom: 10px;
+}
+
+.point-description {
+    font-size: 16px;
+    color: #333;
+}
+
+.custom-phrase-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(26, 77, 46, 0.3);
+}
+
+.custom-phrase {
+    font-size: 24px;
+    font-weight: 400;
+    color: #1a4d2e;
+    margin: 0;
+}
+
+.highlight {
+    font-weight: 700;
+    color: #1a4d2e;
+    text-transform: uppercase;
+}
