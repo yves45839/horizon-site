@@ -37,7 +37,7 @@ const services = [
 const NosSolutions = () => {
     return (
         <section id="nos-solutions" className="solutions-section">
-            <h2 className="solutions-title">Nos Services</h2>
+            <h2 className="solutions-title">Horizon Environnement et Logistique</h2>
             <div className="solutions-grid">
                 {services.map((service, index) => (
                     <div key={index} className="solution-card">
