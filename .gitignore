@@ -22,6 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Ignorer les fichiers et dossiers générés par Visual Studio
+# Ignorer les fichiers et dossiers gï¿½nï¿½rï¿½s par Visual Studio
 .vs/
 *.vsidx
+.vercel

@@ -15,7 +15,7 @@ function App() {
                 <PourquoiNous />
             </main>
             <footer className="App-footer">
-                <p>Contactez-nous : info@lumikode.com | www.lumikode.com</p>
+                <p>Contactez-nous : info@horizonenvironnement.com | 27 22 31 27 01 Powered by Lumikode|Label Retail</p>
             </footer>
         </div>
     );

@@ -40,7 +40,7 @@ const PourquoiNous = () => {
             </div>
             <div className="custom-phrase-container">
                 <p className="custom-phrase">
-                    Horizon Environnement & Logistique : Votre partenaire pour un avenir plus vert et responsable.
+                    Horizon Environnement & Logistique : Votre partenaire environnemental.
                 </p>
             </div>
         </section>
