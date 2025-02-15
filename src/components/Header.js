@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import RealHeader from './RealHeader'; // Assurez-vous que ce chemin est correct
+import RealHeader from './RealHeader';
 
 const codeLines = [
-    "Bienvenue chez LumiKode",
-    "Votre Agence de marketing Digitale",
+    "Bienvenue chez Horizon Environnement & Logistique",
+    "Votre partenaire en durabilité",
 ];
 
 const Header = () => {
@@ -12,10 +12,10 @@ const Header = () => {
     const [showRealHeader, setShowRealHeader] = useState(false);
 
     useEffect(() => {
-        const totalDelay = 3.5 + 3.5; // durée de la première ligne + durée de la deuxième ligne
+        const totalDelay = 3.5 + 3.5;
         const hideTimeout = setTimeout(() => {
             setHidden(true);
-            setTimeout(() => setShowRealHeader(true), 1000); // Attendez que l'animation de disparition soit terminée
+            setTimeout(() => setShowRealHeader(true), 1000);
         }, totalDelay * 1000);
 
         return () => clearTimeout(hideTimeout);

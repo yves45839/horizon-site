@@ -1,50 +1,50 @@
 import React from 'react';
 import './NosSolutions.css';
 
-const solutions = [
+const services = [
     {
-        title: "Stratégie des Réseaux Sociaux",
-        description: "Nous développons une stratégie efficace pour augmenter votre présence en ligne.",
-        image: `${process.env.PUBLIC_URL}/images/social_media_strategy.jpg`,
+        title: "Gestion des Déchets",
+        description: "Collecte, transport et traitement des déchets industriels et dangereux.",
+        image: "/images/waste_management.jpg",
     },
     {
-        title: "Gestion de Communauté",
-        description: "Nous construisons et engageons une communauté autour de votre marque.",
-        image: `${process.env.PUBLIC_URL}/images/community_management.jpg`,
+        title: "Nettoyage Industriel",
+        description: "Nettoyage et entretien des installations industrielles et canalisations.",
+        image: "/images/industrial_cleaning.jpg",
     },
     {
-        title: "Création de Contenu",
-        description: "Nous créons du contenu de qualité qui attire et retient l'attention.",
-        image: `${process.env.PUBLIC_URL}/images/content_creation.jpg`,
+        title: "Transport et Logistique",
+        description: "Transport sécurisé et logistique pour divers secteurs industriels.",
+        image: "/images/logistics_transport.jpg",
     },
     {
-        title: "Veille Concurrentielle",
-        description: "Nous restons à l'affût de la concurrence avec une veille stratégique.",
-        image: `${process.env.PUBLIC_URL}/images/competitive_intelligence.jpg`,
+        title: "Valorisation des Déchets",
+        description: "Recyclage et valorisation des matières pour un environnement durable.",
+        image: "/images/waste_recycling.jpg",
     },
     {
-        title: "Rapports & Analyses",
-        description: "Nous analysons les performances et optimisons vos stratégies.",
-        image: `${process.env.PUBLIC_URL}/images/reporting_analytics.jpg`,
+        title: "Hydrocurage et Curage",
+        description: "Services spécialisés pour le curage et l'entretien des réseaux d'assainissement.",
+        image: "/images/hydrocleaning.jpg",
     },
     {
-        title: "Gestion de Crise",
-        description: "Nous vous aidons à gérer efficacement les situations de crise.",
-        image: `${process.env.PUBLIC_URL}/images/crisis_management.jpg`,
+        title: "Location d'Engins",
+        description: "Mise à disposition d'engins pour vos besoins en travaux et logistique.",
+        image: "/images/machinery_rental.jpg",
     },
 ];
 
 const NosSolutions = () => {
     return (
         <section id="nos-solutions" className="solutions-section">
-            <h2 className="solutions-title">Nos Solutions</h2>
+            <h2 className="solutions-title">Nos Services</h2>
             <div className="solutions-grid">
-                {solutions.map((solution, index) => (
+                {services.map((service, index) => (
                     <div key={index} className="solution-card">
-                        <img src={solution.image} alt={solution.title} className="solution-image" />
+                        <img src={service.image} alt={service.title} className="solution-image" />
                         <div className="solution-content">
-                            <h3 className="solution-title">{solution.title}</h3>
-                            <p className="solution-description">{solution.description}</p>
+                            <h3 className="solution-title">{service.title}</h3>
+                            <p className="solution-description">{service.description}</p>
                         </div>
                     </div>
                 ))}

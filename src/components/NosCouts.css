@@ -1,150 +1,84 @@
 .section {
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #f9f9f9, #e0e7ff);
+    padding: 60px 20px;
+    background-color: #f9f9f9;
     text-align: center;
-    position: relative;
-    overflow: hidden;
 }
-
-    .section h2 {
-        font-size: 42px;
-        margin-bottom: 60px;
-        font-weight: 800;
-        text-transform: uppercase;
-        color: #333;
-        position: relative;
-        z-index: 1;
-        opacity: 0;
-        transform: translateY(-50px);
-        animation: titleSlideIn 1s ease forwards;
-        background: linear-gradient(90deg, #ff6e7f, #bfe9ff);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-    }
 
 .pricing {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     margin-top: 40px;
-    position: relative;
-    z-index: 1;
 }
 
 .pricing-plan {
     background-color: white;
-    border-radius: 15px;
-    padding: 40px 30px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
-    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 280px;
-    max-width: 320px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: cardEntrance 1s ease forwards;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
     .pricing-plan:hover {
-        transform: scale(1.05);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        background-color: #ff6e7f10;
+        transform: translateY(-10px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
     }
 
     .pricing-plan h3 {
-        font-size: 28px;
+        font-size: 24px;
         color: #ff6e7f;
         margin-bottom: 20px;
         text-transform: uppercase;
-        transition: color 0.5s ease;
-    }
-
-    .pricing-plan:hover h3 {
-        color: #bfe9ff;
     }
 
     .pricing-plan p {
-        font-size: 22px;
+        font-size: 20px;
         font-weight: bold;
         color: #333;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .pricing-plan ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        margin-bottom: 30px;
     }
 
         .pricing-plan ul li {
-            font-size: 18px;
+            font-size: 16px;
             color: #666;
             padding: 10px 0;
             border-bottom: 1px solid #ddd;
-            transition: color 0.3s ease;
         }
 
             .pricing-plan ul li:last-child {
                 border-bottom: none;
             }
 
-            .pricing-plan ul li:hover {
-                color: #ff6e7f;
-            }
-
     .pricing-plan:last-child p {
         color: #555;
         font-style: italic;
-        font-size: 20px;
+        font-size: 18px;
     }
+
 
     .pricing-plan button {
         margin-top: 20px;
-        padding: 15px 30px;
+        padding: 10px 20px;
         background-color: #ff6e7f;
         color: white;
         border: none;
-        border-radius: 50px;
-        font-size: 18px;
+        border-radius: 5px;
+        font-size: 16px;
         cursor: pointer;
-        transition: background-color 0.5s ease, transform 0.5s ease;
+        transition: background-color 0.3s ease;
     }
 
         .pricing-plan button:hover {
             background-color: #ff4e5f;
-            transform: scale(1.1);
         }
-
-/* Animations */
-@keyframes titleSlideIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes cardEntrance {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.pricing-plan:nth-child(1) {
-    animation-delay: 0.5s;
-}
-
-.pricing-plan:nth-child(2) {
-    animation-delay: 1s;
-}
-
-.pricing-plan:nth-child(3) {
-    animation-delay: 1.5s;
-}

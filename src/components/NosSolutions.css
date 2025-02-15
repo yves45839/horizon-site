@@ -1,165 +1,56 @@
 .solutions-section {
-    background: linear-gradient(135deg, #f5f7fa 25%, #e0e7ff 100%);
-    padding: 100px 20px;
+    background: #e0f7e9; /* Vert clair pour rappeler l'écologie */
+    padding: 60px 20px;
     text-align: center;
-    overflow: hidden;
-    position: relative;
-    perspective: 1000px;
 }
 
-    .solutions-section::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 200%;
-        height: 200%;
-        background-image: radial-gradient(circle, rgba(255,110,127,0.2), transparent);
-        transform: translateX(-50%) translateY(-100px) rotate(30deg);
-        animation: rotateBg 15s linear infinite;
-        z-index: 0;
-    }
-
 .solutions-title {
-    font-size: 42px;
-    margin-bottom: 60px;
-    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
     text-transform: uppercase;
-    color: #333;
-    opacity: 0;
-    transform: translateY(50px) scale(0.9);
-    animation: titleEntrance 1s ease forwards;
-    animation-delay: 0.5s;
-    z-index: 1;
-    position: relative;
-    letter-spacing: 2px;
-    background: linear-gradient(90deg, #ff6e7f 0%, #bfe9ff 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-clip: text;
+    color: #1a4d2e; /* Vert foncé */
 }
 
 .solutions-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 20px;
     justify-items: center;
-    z-index: 1;
-    position: relative;
 }
 
 .solution-card {
-    background: white;
-    border-radius: 15px;
+    background: #ffffff;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    box-shadow: 0 10px 20px rgba(26, 77, 46, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 100%;
-    transform-style: preserve-3d;
-    transform: translateY(50px) rotateX(10deg);
-    opacity: 0;
-    animation: cardEntrance 1s ease forwards;
 }
 
-    .solution-card:nth-child(1) {
-        animation-delay: 0.7s;
-    }
-
-    .solution-card:nth-child(2) {
-        animation-delay: 0.9s;
-    }
-
-    .solution-card:nth-child(3) {
-        animation-delay: 1.1s;
-    }
-
-    .solution-card:nth-child(4) {
-        animation-delay: 1.3s;
-    }
-
-    .solution-card:nth-child(5) {
-        animation-delay: 1.5s;
-    }
-
-    .solution-card:nth-child(6) {
-        animation-delay: 1.7s;
-    }
-
-    .solution-card:hover {
-        transform: translateY(-20px) rotateX(0) scale(1.05);
-        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
-        background-color: rgba(255,110,127,0.1);
-    }
+.solution-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(26, 77, 46, 0.4);
+}
 
 .solution-image {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
-    transition: transform 0.5s ease;
-    transform: scale(1.2);
-}
-
-.solution-card:hover .solution-image {
-    transform: scale(1);
+    border-bottom: 5px solid #1a4d2e;
 }
 
 .solution-content {
-    padding: 25px;
-    color: #333;
-    transition: color 0.4s ease;
-}
-
-.solution-card:hover .solution-content {
-    color: #ff6e7f;
+    padding: 20px;
 }
 
 .solution-title {
-    font-size: 26px;
-    margin-bottom: 15px;
-    transition: color 0.4s ease, transform 0.4s ease;
-    transform: translateX(-10px);
-}
-
-.solution-card:hover .solution-title {
-    color: #ff6e7f;
-    transform: translateX(0);
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1a4d2e; /* Changement de couleur en vert foncé */
 }
 
 .solution-description {
-    font-size: 18px;
-    color: #666;
-    transition: color 0.4s ease, transform 0.4s ease;
-    transform: translateX(-10px);
-}
-
-.solution-card:hover .solution-description {
-    color: #444;
-    transform: translateX(0);
-}
-
-/* Background Animation */
-@keyframes rotateBg {
-    0% {
-        transform: translateX(-50%) translateY(-100px) rotate(0deg);
-    }
-
-    100% {
-        transform: translateX(-50%) translateY(-100px) rotate(360deg);
-    }
-}
-
-/* Title Entrance Animation */
-@keyframes titleEntrance {
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-/* Card Entrance Animation */
-@keyframes cardEntrance {
-    to {
-        opacity: 1;
-        transform: translateY(0) rotateX(0);
-    }
+    font-size: 16px;
+    color: #333;
 }

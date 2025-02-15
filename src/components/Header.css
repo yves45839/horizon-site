@@ -1,19 +1,15 @@
 .header {
     width: 100%;
-    height: 05em;
-    position: fixed; 
-    top: 0; 
-    left: 0;
+    height: 5em;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #282c34;
+    background-color: #1a4d2e;
     color: white;
     text-align: center;
     overflow: hidden;
-    z-index: 1000; 
 }
-
 
 .code-banner {
     position: absolute;
@@ -80,9 +76,6 @@
     animation: fadeOutAndCollapse 1s forwards;
 }
 
-
-
-/* Ajout des délais pour chaque ligne */
 .line-0 {
     animation-duration: 3.5s;
     animation-delay: 0s;
@@ -91,39 +84,4 @@
 .line-1 {
     animation-duration: 3.5s;
     animation-delay: 3.5s;
-}
-
-.line-2 {
-    animation-duration: 3.5s;
-    animation-delay: 7s;
-}
-
-.line-3 {
-    animation-duration: 3.5s;
-    animation-delay: 10.5s;
-}
-
-.line-4 {
-    animation-duration: 3.5s;
-    animation-delay: 14s;
-}
-
-.line-5 {
-    animation-duration: 3.5s;
-    animation-delay: 17.5s;
-}
-
-.line-6 {
-    animation-duration: 3.5s;
-    animation-delay: 21s;
-}
-
-.line-7 {
-    animation-duration: 3.5s;
-    animation-delay: 24.5s;
-}
-
-.line-8 {
-    animation-duration: 3.5s;
-    animation-delay: 28s;
 }

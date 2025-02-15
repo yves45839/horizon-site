@@ -1,28 +1,28 @@
 import React from 'react';
 import './PourquoiNous.css';
-import { FaBrain, FaUserCheck, FaChartLine, FaBolt } from 'react-icons/fa'; // Assurez-vous que react-icons est bien installé
+import { FaRecycle, FaIndustry, FaTruckMoving, FaLeaf } from 'react-icons/fa'; // Assurez-vous que react-icons est bien installé
 
 const PourquoiNous = () => {
     const points = [
         {
-            icon: <FaBrain />,
-            title: "Expertise",
-            description: "Nous avons une expertise approfondie en marketing digital, assurant des solutions efficaces et adaptées."
+            icon: <FaRecycle />,
+            title: "Engagement Écologique",
+            description: "Nous adoptons des pratiques durables pour préserver l'environnement."
         },
         {
-            icon: <FaUserCheck />,
-            title: "Personnalisation",
-            description: "Chaque stratégie est personnalisée pour répondre aux besoins uniques de chaque client."
+            icon: <FaIndustry />,
+            title: "Expertise Industrielle",
+            description: "Des années d'expérience dans la gestion des déchets et l'assainissement."
         },
         {
-            icon: <FaChartLine />,
-            title: "Proactivité",
-            description: "Nous anticipons les tendances pour vous garder à l'avant-garde du marché."
+            icon: <FaTruckMoving />,
+            title: "Logistique Optimisée",
+            description: "Une flotte moderne et optimisée pour un transport sécurisé."
         },
         {
-            icon: <FaBolt />,
-            title: "Réactivité",
-            description: "Notre équipe est réactive, assurant une gestion rapide et efficace de vos besoins."
+            icon: <FaLeaf />,
+            title: "Innovation Verte",
+            description: "Nous investissons dans des solutions innovantes pour un avenir durable."
         }
     ];
 
@@ -40,7 +40,7 @@ const PourquoiNous = () => {
             </div>
             <div className="custom-phrase-container">
                 <p className="custom-phrase">
-                    Nous sommes à la fois votre <span className="highlight">WebMaster</span>, votre <span className="highlight">Community Manager</span>, et votre <span className="highlight">IT</span>.
+                    Horizon Environnement & Logistique : Votre partenaire pour un avenir plus vert et responsable.
                 </p>
             </div>
         </section>

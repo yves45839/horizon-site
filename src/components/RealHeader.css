@@ -5,7 +5,7 @@
 }
 
 .real-header {
-    background: linear-gradient(270deg, #ff6e7f, #bfe9ff);
+    background: linear-gradient(270deg, #1a4d2e, #4caf50);
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
     color: white;
@@ -15,7 +15,6 @@
     align-items: center;
     position: fixed;
     width: 100%;
-    max-width: 100%;
     top: 0;
     z-index: 1000;
     overflow-x: hidden;
@@ -43,7 +42,7 @@
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 2em; /* Ajustez l'écart entre les éléments */
+    gap: 2em; /* Ajustez l'ï¿½cart entre les ï¿½lï¿½ments */
     margin: 0;
     padding: 0;
 }
