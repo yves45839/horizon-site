@@ -128,11 +128,17 @@ function App() {
                 <PourquoiNous />
                 <section className="cta-section" id="contact">
                     <div className="container cta-inner" data-animate="fade-up">
-                        <div>
+                        <div className="cta-content">
                             <h2>Prêts à accélérer vos engagements RSE ?</h2>
                             <p>
                                 Ensemble, concevons une stratégie environnementale ambitieuse, conforme aux normes et
                                 parfaitement adaptée à vos enjeux opérationnels.
+                            </p>
+                            <p className="cta-contact-numbers">
+                                <span>Contactez-nous au </span>
+                                <a href="tel:+2250779275899">+225 07 79 27 58 99</a>
+                                <span> ou </span>
+                                <a href="tel:+2252722312701">+225 27 22 31 27 01</a>
                             </p>
                         </div>
                         <a className="button primary" href="mailto:info@horizonenvironnement.com">Écrire à nos experts</a>
@@ -142,7 +148,8 @@ function App() {
             <footer className="App-footer">
                 <p>
                     © {new Date().getFullYear()} Horizon Environnement &amp; Logistique — info@horizonenvironnement.com —
-                    27 22 31 27 01
+                    <a href="tel:+2250779275899">+225 07 79 27 58 99</a> /{' '}
+                    <a href="tel:+2252722312701">+225 27 22 31 27 01</a>
                 </p>
                 <p>Powered by Lumikode | Label Retail</p>
             </footer>
