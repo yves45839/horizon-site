@@ -52,7 +52,7 @@ const PourquoiNous = () => {
                         opérationnelle et impact positif.
                     </p>
                     <div className="certifications">
-                        <span>ISO 14001 Ready</span>
+                        <span>Processus orientés hygiène, qualité et environnement</span>
                         <span>Conformité ICPE</span>
                         <span>Reporting digitalisé</span>
                     </div>

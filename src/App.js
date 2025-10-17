@@ -25,15 +25,15 @@ function App() {
                             <div className="hero-stats">
                                 <div className="stat-card">
                                     <strong>20+</strong>
-                                    <span>années d’expertise cumulée</span>
+                                    <span>années d’expertise cumulée de notre personnel</span>
                                 </div>
                                 <div className="stat-card">
                                     <strong>98%</strong>
                                     <span>de taux de satisfaction client</span>
                                 </div>
                                 <div className="stat-card">
-                                    <strong>12</strong>
-                                    <span>secteurs accompagnés au quotidien</span>
+                                    <strong>Plusieurs</strong>
+                                    <span>secteurs d’activité accompagnés au quotidien</span>
                                 </div>
                             </div>
                         </div>
