@@ -30,23 +30,33 @@ const PourquoiNous = () => {
         <section id="pourquoi-nous" className="pourquoi-nous-section">
             <div className="container">
                 <div className="pourquoi-header">
-                    <span className="section-kicker">Pourquoi nous choisir</span>
-                    <h2 className="section-title">Une alliance de rigueur environnementale et d’agilité terrain</h2>
-                    <p className="section-description">
+                    <span className="section-kicker" data-animate="fade-up">Pourquoi nous choisir</span>
+                    <h2 className="section-title" data-animate="fade-up" style={{ '--delay': '0.12s' }}>
+                        Une alliance de rigueur environnementale et d’agilité terrain
+                    </h2>
+                    <p className="section-description" data-animate="fade-up" style={{ '--delay': '0.2s' }}>
                         Nous construisons des partenariats durables, orientés résultats, où chaque intervention est
                         pilotée par la donnée et renforcée par nos engagements humains.
                     </p>
                 </div>
                 <div className="points-grid">
-                    {points.map((point, index) => (
-                        <article key={index} className="point-card">
-                            <div className="icon" aria-hidden="true">{point.icon}</div>
-                            <h3 className="point-title">{point.title}</h3>
-                            <p className="point-description">{point.description}</p>
-                        </article>
-                    ))}
+                    {points.map((point, index) => {
+                        const delay = (index * 0.1).toFixed(2);
+                        return (
+                            <article
+                                key={index}
+                                className="point-card"
+                                data-animate="fade-up"
+                                style={{ '--delay': `${delay}s` }}
+                            >
+                                <div className="icon" aria-hidden="true">{point.icon}</div>
+                                <h3 className="point-title">{point.title}</h3>
+                                <p className="point-description">{point.description}</p>
+                            </article>
+                        );
+                    })}
                 </div>
-                <div className="custom-phrase-container">
+                <div className="custom-phrase-container" data-animate="fade-up" style={{ '--delay': '0.25s' }}>
                     <p className="custom-phrase">
                         Horizon Environnement &amp; Logistique : votre partenaire stratégique pour conjuguer performance
                         opérationnelle et impact positif.

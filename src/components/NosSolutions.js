@@ -44,26 +44,36 @@ const NosSolutions = () => {
     return (
         <section id="nos-solutions" className="solutions-section">
             <div className="container">
-                <span className="section-kicker">Nos expertises</span>
-                <h2 className="solutions-title">Des solutions écologiques et logistiques orchestrées de bout en bout</h2>
-                <p className="solutions-description">
+                <span className="section-kicker" data-animate="fade-up">Nos expertises</span>
+                <h2 className="solutions-title" data-animate="fade-up" style={{ '--delay': '0.1s' }}>
+                    Des solutions écologiques et logistiques orchestrées de bout en bout
+                </h2>
+                <p className="solutions-description" data-animate="fade-up" style={{ '--delay': '0.18s' }}>
                     Nous concevons des dispositifs intégrés et adaptables pour répondre aux exigences réglementaires,
                     optimiser vos opérations et créer de la valeur environnementale sur toute la chaîne.
                 </p>
                 <div className="solutions-grid">
-                    {services.map((service, index) => (
-                        <article key={index} className="solution-card">
-                            <div className="solution-image-wrapper">
-                                <img src={service.image} alt={service.title} className="solution-image" />
-                                <span className="solution-tag">{service.tag}</span>
-                            </div>
-                            <div className="solution-content">
-                                <span className="solution-index">0{index + 1}</span>
-                                <h3 className="solution-title">{service.title}</h3>
-                                <p className="solution-description">{service.description}</p>
-                            </div>
-                        </article>
-                    ))}
+                    {services.map((service, index) => {
+                        const delay = (index * 0.1).toFixed(2);
+                        return (
+                            <article
+                                key={index}
+                                className="solution-card"
+                                data-animate="fade-up"
+                                style={{ '--delay': `${delay}s` }}
+                            >
+                                <div className="solution-image-wrapper">
+                                    <img src={service.image} alt={service.title} className="solution-image" />
+                                    <span className="solution-tag">{service.tag}</span>
+                                </div>
+                                <div className="solution-content">
+                                    <span className="solution-index">0{index + 1}</span>
+                                    <h3 className="solution-title">{service.title}</h3>
+                                    <p className="solution-description">{service.description}</p>
+                                </div>
+                            </article>
+                        );
+                    })}
                 </div>
             </div>
         </section>
