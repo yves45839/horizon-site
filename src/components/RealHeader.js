@@ -19,7 +19,7 @@ const RealHeader = () => {
         <header className={`real-header ${scrolled ? 'scrolled' : ''}`}>
             <div className="nav-container">
                 <div className="logo" aria-label="Horizon Environnement &amp; Logistique">
-                    <img src="/images/logo_lumikode.png" alt="Logo Horizon Environnement" />
+                    <img src="/images/logo_nature.svg" alt="Emblème naturel Horizon Environnement" />
                 </div>
                 <nav aria-label="Navigation principale">
                     <ul className="nav-list">
