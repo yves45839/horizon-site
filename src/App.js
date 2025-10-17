@@ -39,7 +39,7 @@ function App() {
                         </div>
                         <div className="hero-visual" aria-hidden="true">
                             <div className="hero-visual-glow" />
-                            <img src="/images/header_image.svg" alt="Illustration environnementale" />
+                            <img src="/images/header_image.png" alt="Illustration environnementale" />
                         </div>
                     </div>
                 </section>
