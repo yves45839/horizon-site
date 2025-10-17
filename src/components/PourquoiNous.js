@@ -63,7 +63,6 @@ const PourquoiNous = () => {
                     </p>
                     <div className="certifications">
                         <span>Processus orientés hygiène, qualité et environnement</span>
-                        <span>Conformité ICPE</span>
                         <span>Reporting digitalisé</span>
                     </div>
                 </div>

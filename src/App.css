@@ -26,9 +26,9 @@ html {
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(circle at top left, rgba(155, 231, 196, 0.35), transparent 40%),
-        radial-gradient(circle at top right, rgba(76, 175, 80, 0.25), transparent 45%),
-        linear-gradient(180deg, #f7fbf8 0%, #edf6ee 100%);
+    background: radial-gradient(circle at top left, rgba(135, 223, 255, 0.35), transparent 40%),
+        radial-gradient(circle at top right, rgba(0, 168, 255, 0.25), transparent 45%),
+        linear-gradient(180deg, #f2f9ff 0%, #d8efff 100%);
     color: var(--text-primary);
     position: relative;
     min-height: 100%;
@@ -41,7 +41,7 @@ body::after {
     width: 45vmax;
     height: 45vmax;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(155, 231, 196, 0.28) 0%, rgba(155, 231, 196, 0) 65%);
+    background: radial-gradient(circle, rgba(135, 223, 255, 0.28) 0%, rgba(135, 223, 255, 0) 65%);
     z-index: -2;
     filter: blur(0px);
     opacity: 0.75;
@@ -167,7 +167,7 @@ main {
 .hero::before {
     width: 28rem;
     height: 28rem;
-    background: radial-gradient(circle, rgba(155, 231, 196, 0.55) 0%, rgba(155, 231, 196, 0) 70%);
+    background: radial-gradient(circle, rgba(135, 223, 255, 0.55) 0%, rgba(135, 223, 255, 0) 70%);
     top: 6rem;
     left: -12rem;
 }
@@ -175,7 +175,7 @@ main {
 .hero::after {
     width: 22rem;
     height: 22rem;
-    background: radial-gradient(circle, rgba(76, 175, 80, 0.45) 0%, rgba(76, 175, 80, 0) 72%);
+    background: radial-gradient(circle, rgba(0, 168, 255, 0.45) 0%, rgba(0, 168, 255, 0) 72%);
     bottom: -8rem;
     right: -8rem;
 }

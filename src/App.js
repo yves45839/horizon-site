@@ -101,10 +101,6 @@ function App() {
                         <div className="impact-grid">
                             {[
                                 {
-                                    metric: '-35%',
-                                    description: 'de réduction de déchets dangereux dès la première année.',
-                                },
-                                {
                                     metric: '100%',
                                     description: 'de traçabilité assurée via nos rapports digitaux sécurisés.',
                                 },
